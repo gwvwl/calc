@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>range</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input">
+        <label for="storage">
+          <div class="storage_value">Storage: 0</div>
+          <input
+            type="range"
+            id="storage"
+            min="0"
+            max="1000"
+            step="1"
+            value="0"
+          />
+        </label>
+        <label for="transfer">
+          <div class="transfer_value">Transfer: 0</div>
+          <input
+            type="range"
+            id="transfer"
+            min="0"
+            max="1000"
+            step="1"
+            value="0"
+          />
+        </label>
+      </div>
+      <div class="wrapper_graph">
+        <div class="wrapper_graph_name">
+          <span class="graph_name">backblaze.com</span>
+
+          <div class="graph_radio">
+            <span class="graph_name">bunny.net</span>
+            <div>
+              <input
+                type="radio"
+                id="HDD"
+                name="bunny_radio"
+                value="HDD"
+                checked
+              />
+              <label for="HDD">HDD</label>
+
+              <input type="radio" id="SSD" name="bunny_radio" value="SSD" />
+              <label for="SSD">CDD</label>
+            </div>
+          </div>
+
+          <div class="graph_radio">
+            <span class="graph_name">scaleway.com</span>
+            <div>
+              <input
+                type="radio"
+                id="multi"
+                name="scaleway_radio"
+                value="multi"
+                checked
+              />
+              <label for="multi">multi</label>
+
+              <input
+                type="radio"
+                id="single"
+                name="scaleway_radio"
+                value="single"
+              />
+              <label for="single">single</label>
+            </div>
+          </div>
+
+          <span class="graph_name">vultr.com</span>
+        </div>
+
+        <div class="wrapper_graph_range">
+          <div class="graph">
+            <div class="graph_range" data-value="backblaze"></div>
+            <span class="graph_value" data-value="backblaze">0$</span>
+          </div>
+
+          <div class="graph">
+            <div class="graph_range" data-value="bunny"></div>
+            <span class="graph_value" data-value="bunny">0$</span>
+          </div>
+
+          <div class="graph">
+            <div class="graph_range scaleway" data-value="scaleway"></div>
+            <span class="graph_value" data-value="scaleway">0$</span>
+          </div>
+
+          <div class="graph">
+            <div class="graph_range" data-value="vultr"></div>
+            <span class="graph_value" data-value="vultr">0$</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
